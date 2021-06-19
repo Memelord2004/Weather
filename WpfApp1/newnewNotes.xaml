@@ -1,0 +1,16 @@
+﻿<Controls:MetroWindow x:Class="WpfApp1.newnewNotes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="New note" Height="360.696" Width="442.784" Background="LightGray">
+    <Grid Margin="0,0,2,2">
+
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="24" Margin="20,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393" Controls:TextBoxHelper.Watermark="Название" />
+        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Height="250" Margin="20,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393" Controls:TextBoxHelper.Watermark="Комментарий" Controls:TextBoxHelper.ClearTextButton="True"/>
+        <Button x:Name="Button2" Content="Сохранить" HorizontalAlignment="Left" Margin="172,296,0,0" VerticalAlignment="Top" Width="76" Click="Button2_Click"/>
+    </Grid>
+</Controls:MetroWindow>
